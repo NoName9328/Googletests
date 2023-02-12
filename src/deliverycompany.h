@@ -1,6 +1,6 @@
 #pragma once
 
-#include "abstrasctvehicle.h"
+#include "ivehicle.h"
 
 #include <string>
 
@@ -30,7 +30,7 @@ class DeliveryCompany
 {
 public:
     DeliveryCompany();
-    std::string createDeliveryRequest(Location from, Location to);
+    std::string createDeliveryRequest(Location from, Location to, const IVehicle *vehicle);
 
 private:
     std::string convertingLocationToString(Location location);
@@ -39,6 +39,6 @@ private:
     Location _to;
     Location _from;
     Weather _weather;
-    AbstrasctVehicle _vehicle;
+
 };
 
