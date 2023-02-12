@@ -3,10 +3,10 @@
 class IVehicle
 {
 public:
-    IVehicle();
+    virtual ~IVehicle() = default;
     virtual void startMoving() = 0;
     virtual bool isLandVehicle() = 0;
     virtual bool isWaterVehicle() = 0;
-    virtual bool isFlyingМehicle() = 0;
+    virtual bool isFlyingVehicle() = 0;
 };
 

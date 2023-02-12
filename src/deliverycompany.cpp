@@ -1,4 +1,7 @@
 #include "deliverycompany.h"
+
+#include "ivehicle.h"
+
 #include <iostream>
 
 DeliveryCompany::DeliveryCompany()
@@ -6,7 +9,7 @@ DeliveryCompany::DeliveryCompany()
 
 }
 
-std::string DeliveryCompany::createDeliveryRequest(Location from, Location to)
+std::string DeliveryCompany::createDeliveryRequest(Location from, Location to, const IVehicle *vehicle)
 {
     std::string configText;
     if(from == Location::Russia || to == Location::Russia)
@@ -14,8 +17,6 @@ std::string DeliveryCompany::createDeliveryRequest(Location from, Location to)
         std::cout << "Russia is a terrorist state. We will have nothing to do with her!" << std::endl;
         return "";
     }
-
-
 
 
     return "All god";

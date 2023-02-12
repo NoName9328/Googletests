@@ -1,11 +1,14 @@
 #pragma once
 
-#include "abstrasctvehicle.h"
+#include "abstractvehicle.h"
 
-
-class Car : public AbstrasctVehicle
+class Car : public AbstractVehicle
 {
 public:
     Car();
+    virtual void startMoving() override;
+    virtual bool isLandVehicle() override;
+    virtual bool isWaterVehicle() override;
+    virtual bool isFlyingVehicle() override;
 };
 

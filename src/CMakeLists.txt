@@ -7,10 +7,11 @@ set(SOURCES
     plane.h
     ship.cpp
     ship.h
-    ivehicle.cpp
     ivehicle.h
     deliverycompany.cpp
     deliverycompany.h
+    abstractvehicle.h
+    abstractvehicle.cpp
     main.cpp
 )
 
