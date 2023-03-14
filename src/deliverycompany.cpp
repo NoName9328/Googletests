@@ -19,7 +19,7 @@ std::string DeliveryCompany::createDeliveryRequest(Location from, Location to, c
     }
 
 
-    return "All god";
+    return "All good";
 }
 
 std::string DeliveryCompany::convertingLocationToString(Location location)
@@ -45,8 +45,6 @@ std::string DeliveryCompany::convertingLocationToString(Location location)
         case Location::Italy:
             return " Italy ";
         default:
-        {
             return " Sorry, we don't know such a country ";
-        }
     }
 }

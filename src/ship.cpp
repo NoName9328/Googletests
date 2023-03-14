@@ -1,11 +1,6 @@
 #include "ship.h"
 
-Ship::Ship()
-{
-
-}
-
-void Ship::startMoving()
+Ship::Ship(VehicleType vehicleTyp) : AbstractVehicle(vehicleTyp)
 {
 
 }

@@ -7,7 +7,7 @@
 int main()
 {
     DeliveryCompany deliveryCompany;
-    IVehicle *plane = new Plane;
+    IVehicle *plane = new Plane(VehicleType::Plane);
     deliveryCompany.createDeliveryRequest(Location::Italy, Location::Ukraine, plane);
     delete plane;
     return 0;

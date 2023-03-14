@@ -5,8 +5,7 @@
 class Plane : public AbstractVehicle
 {
 public:
-    Plane();
-    void startMoving() override;
+    Plane(VehicleType vehicleTyp);
     bool isLandVehicle() override;
     bool isWaterVehicle() override;
     bool isFlyingVehicle() override;

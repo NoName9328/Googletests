@@ -5,8 +5,7 @@
 class Ship : public AbstractVehicle
 {
 public:
-    Ship();
-    virtual void startMoving() override;
+    Ship(VehicleType vehicleTyp);
     virtual bool isLandVehicle() override;
     virtual bool isWaterVehicle() override;
     virtual bool isFlyingVehicle() override;

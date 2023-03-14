@@ -1,15 +1,9 @@
 #include "plane.h"
 #include <iostream>
 
-Plane::Plane()
+Plane::Plane(VehicleType vehicleTyp) : AbstractVehicle(vehicleTyp)
 {
 
-}
-
-
-void Plane::startMoving()
-{
-    std::cout<< "move (Fly)";
 }
 
 bool Plane::isLandVehicle()

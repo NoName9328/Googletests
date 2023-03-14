@@ -1,11 +1,16 @@
 #include "abstractvehicle.h"
 
-AbstractVehicle::AbstractVehicle()
+AbstractVehicle::AbstractVehicle(VehicleType vehicleTyp)
 {
 
 }
 
 AbstractVehicle::~AbstractVehicle()
+{
+
+}
+
+void AbstractVehicle::startMoving()
 {
 
 }

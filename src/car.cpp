@@ -1,8 +1,7 @@
 #include "car.h"
 
-Car::Car()
+Car::Car(VehicleType vehicleTyp) : AbstractVehicle(vehicleTyp)
 {
-
 }
 
 void Car::startMoving()

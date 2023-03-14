@@ -1,14 +1,12 @@
-cmake_minimum_required(VERSION 3.1)
+cmake_minimum_required(VERSION 3.7)
 
-project(LerningGoogleTests)
+project(LerningGoogleTests LANGUAGES CXX)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
-#target_link_libraries(${PROJECT_NAME} PRIVATE GTest::Main)
-#gtest_add_tests(TARGET ${PROJECT_NAME} WORKING_DIRECTORY ${CMAKE_CURRENT_SOURCE_DIR})
-
-add_subdirectory(libs/googletest)
-add_subdirectory(tests)
 add_subdirectory(src)
+add_subdirectory(tests)
+add_subdirectory(libs/googletest)
 
 
