@@ -2,7 +2,8 @@
 
 #include "ivehicle.h"
 
-enum class VehicleType {
+enum class VehicleType
+{
   Car,
   Ship,
   Plane,

@@ -1,5 +1,6 @@
 #include "deliverycompany.h"
 
+#include "abstractvehicle.h"
 #include "ivehicle.h"
 
 #include <iostream>
@@ -14,8 +15,7 @@ std::string DeliveryCompany::createDeliveryRequest(Location from, Location to, c
     std::string configText;
     if(from == Location::Russia || to == Location::Russia)
     {
-        std::cout << "Russia is a terrorist state. We will have nothing to do with her!" << std::endl;
-        return "";
+        return "Russia is a terrorist state. We will have nothing to do with her!" ;
     }
 
 
@@ -47,4 +47,9 @@ std::string DeliveryCompany::convertingLocationToString(Location location)
         default:
             return " Sorry, we don't know such a country ";
     }
+}
+
+double DeliveryCompany::calculateDeliveryTime(const VehicleType vehicle, const Weather weather)
+{
+    return 0.0;
 }
