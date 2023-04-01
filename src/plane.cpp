@@ -18,5 +18,5 @@ bool Plane::isWaterVehicle()
 
 bool Plane::isFlyingVehicle()
 {
-    return false;
+    return true;
 }
